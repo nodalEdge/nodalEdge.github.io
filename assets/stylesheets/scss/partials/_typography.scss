@@ -1,0 +1,192 @@
+/* =Typography
+===================================================== */
+
+/***
+  title: Typography
+  section: Other
+  description: Headings and paragraphs.
+  example: |
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur <strong>adipisicing elit</strong>. Doloremque explicabo earum id ipsa minus, <a href="#">aperiam placeat</a> quo incidunt iste, tempora nulla tempore, quas sunt asperiores neque impedit voluptate recusandae.</p>
+***/
+
+h1,
+h2,
+h3,
+h4 {
+
+  font-weight: $regular;
+  margin-top: 0;
+  margin-bottom: rem(8);
+
+}
+
+h1 {
+
+  @include font-size(24);
+  line-height: 1.2;
+  color: $color-text-heading-1;
+
+  @include breakpoint(medium) {
+
+    @include font-size(28);
+
+  }
+
+  @include breakpoint(large) {
+
+    @include font-size(32);
+
+  }
+
+}
+
+h2 {
+
+  @include font-size(22);
+  line-height: 1.4;
+  color: $color-text-heading-2;
+
+  @include breakpoint(medium) {
+
+    @include font-size(24);
+
+  }
+
+  @include breakpoint(large) {
+
+    @include font-size(32);
+
+  }
+
+}
+
+h3 {
+
+  @include font-size(20);
+  line-height: 1.3;
+  color: $color-text-heading-3;
+
+  @include breakpoint(medium) {
+
+    @include font-size(22);
+
+  }
+
+  @include breakpoint(large) {
+
+    @include font-size(24);
+
+  }
+
+}
+
+h4 {
+
+  @include font-size(18);
+  line-height: 1.3;
+  color: $color-text-heading-4;
+
+  @include breakpoint(medium) {
+
+    // @include font-size(20);
+
+  }
+
+  @include breakpoint(large) {
+
+    // @include font-size(20);
+
+  }
+
+}
+
+p {
+
+  @include font-size(16);
+  line-height: 1.5;
+  color: $color-text-paragraph;
+  margin-top: 0;
+  margin-bottom: rem(16);
+
+  @include breakpoint(small) {
+
+    @include font-size(18);
+    line-height: 1.6;
+
+  }
+
+  @include breakpoint(medium) {
+
+    @include font-size(20);
+    line-height: 1.6;
+
+  }
+
+}
+
+li {
+
+  @include font-size(16);
+  line-height: 1.5;
+  color: $color-text-paragraph;
+  margin-top: rem(4);
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include breakpoint(small) {
+
+    @include font-size(18);
+    line-height: 1.6;
+
+  }
+
+}
+
+a {
+
+  color: $color-text-link;
+  text-decoration: none;
+  @include transition-fast();
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: $color-text-link-hover;
+
+  }
+
+}
+
+strong {
+
+  font-weight: $bold;
+  color: $color-text-strong;
+
+}
+
+em {
+
+  font-stretch: italic;
+
+}
+
+sup {
+
+  vertical-align: text-top;
+  font-size:75%;
+
+}
+
+sub {
+
+  vertical-align: bottom;
+  font-size:75%;
+
+}

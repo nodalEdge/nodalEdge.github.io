@@ -1,0 +1,75 @@
+/* =Media queries
+===================================================== */
+
+// Media queries & breakpoints
+@mixin breakpoint($point) {
+
+  // Does browser support media queries
+  $media-query-support: true !global !default;
+
+  // Style changes at:
+  $very-small-value: 400px;
+  $small-value:      600px;
+  $medium-value:     768px;
+  $large-value:      1000px;
+  $very-large-value: 1400px;
+
+  // Mobile first (min-width)
+  @if ($media-query-support) {
+
+    $very-small:      "(min-width: "$very-small-value")";
+    $small:           "(min-width: "$small-value")";
+    $medium:          "(min-width: "$medium-value")";
+    $large:           "(min-width: "$large-value")";
+    $very-large:      "(min-width: "$very-large-value")";
+
+    @if $point == very-large {
+      @media #{$very-large}     { @content; }
+    }
+    @else if $point == large {
+      @media #{$large}          { @content; }
+    }
+    @else if $point == medium {
+      @media #{$medium}         { @content; }
+    }
+    @else if $point == very-small {
+      @media #{$very-small}     { @content; }
+    }
+    @else if $point == small {
+      @media #{$small}          { @content; }
+    }
+
+  }
+
+  // Desktop down (max-width)
+  @if ($media-query-support) {
+
+    $to-very-small:      "(max-width: "($very-small-value - 1)")";
+    $to-small:           "(max-width: "($small-value - 1)")";
+    $to-medium:          "(max-width: "($medium-value - 1)")";
+    $to-large:           "(max-width: "($large-value - 1)")";
+    $to-very-large:      "(max-width: "($very-large-value - 1)")";
+
+    @if $point == to-very-large {
+      @media #{$to-very-large}  { @content; }
+    }
+    @else if $point == to-large {
+      @media #{$to-large}       { @content; }
+    }
+    @else if $point == to-medium {
+      @media #{$to-medium}      { @content; }
+    }
+    @else if $point == to-very-small {
+      @media #{$to-very-small}  { @content; }
+    }
+    @else if $point == to-small {
+      @media #{$to-small}       { @content; }
+    }
+
+  }
+
+  @else {
+    @content;
+  }
+
+}

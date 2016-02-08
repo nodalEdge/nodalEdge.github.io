@@ -1,0 +1,29 @@
+/* =Form field
+===================================================== */
+
+/***
+  title: Form field
+  section: Forms
+  description: Simple form field
+  example: |
+    <div class="form-field">
+      <div class="field-label">
+        <label for="input-name">Label name</label>
+      </div>
+      <div class="field-group">
+      <input type="text" value="Value example" placeholder="Enter value...">
+      </div>
+    </div>
+***/
+
+.form-field {
+
+  > .field-label {
+
+  }
+
+  > .field-group {
+
+  }
+
+}

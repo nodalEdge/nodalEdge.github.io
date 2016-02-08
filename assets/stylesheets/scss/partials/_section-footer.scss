@@ -1,0 +1,204 @@
+/* =Section Footer
+===================================================== */
+
+/*
+ * Nav footer
+ *
+ * Footer navigation located in section footer
+ */
+
+
+.nav-footer {
+
+  text-align: center;
+  @include clearfix();
+
+  @include breakpoint(small) {
+
+    text-align: left;
+
+  }
+
+  ul {
+
+    @include list-reset();
+
+  }
+
+  li {
+
+    display: inline-block;
+    @include font-size(14);
+    line-height: 1.5;
+    margin: 0;
+
+    &:before {
+
+      content: "|";
+      margin: 0 rem(10);
+      color: rgba(0,0,0,.1);
+
+    }
+
+    &:first-child:before {
+
+      display: none;
+
+    }
+
+  }
+
+  a {
+
+    display: inline-block;
+    color: rgba($color-brand-secondary, .7);
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: darken($color-brand-secondary, 10%);
+
+    }
+
+  }
+
+  i {
+
+    position: relative;
+    top: rem(1);
+    margin-right: rem(2);
+
+  }
+
+  .is-social {
+
+    @include breakpoint(small) {
+
+      float: left;
+
+      &:before {
+
+        content: "|";
+        margin: 0 rem(10);
+        color: rgba(0,0,0,.1);
+
+      }
+
+    }
+
+  }
+
+  .is-regular {
+
+    @include breakpoint(small) {
+
+      float: left;
+
+    }
+
+  }
+
+}
+
+/*
+ * Footer group
+ *
+ * Group top + site info items
+ */
+
+.footer-group {
+
+  @include clearfix();
+  margin-top: $proportion-medium;
+  clear: both;
+
+}
+
+/*
+ * Footer info
+ *
+ * Copyright information
+ */
+
+
+.footer-info {
+
+  text-align: center;
+  margin-top: $proportion-small;
+
+  @include breakpoint(small) {
+
+    float: left;
+    margin-top: 0;
+
+  }
+
+  p {
+
+    @include font-size(14);
+    line-height: 1.5;
+    color: $color-text-weak;
+
+  }
+
+  a {
+
+    display: inline-block;
+    color: rgba($color-brand-secondary, .7);
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: darken($color-brand-secondary, 10%);
+
+    }
+
+  }
+
+}
+
+/*
+ * Footer top
+ *
+ * Return to top action
+ */
+
+
+.footer-top {
+
+  @include font-size(14);
+  line-height: 1.5;
+  text-align: center;
+
+  @include breakpoint(small) {
+
+    float: right;
+
+  }
+
+  a {
+
+    display: inline-block;
+    color: rgba($color-brand-secondary, .7);
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: darken($color-brand-secondary, 10%);
+
+    }
+
+  }
+
+  i {
+
+    position: relative;
+    top: rem(1);
+    margin-left: rem(4);
+
+  }
+
+}

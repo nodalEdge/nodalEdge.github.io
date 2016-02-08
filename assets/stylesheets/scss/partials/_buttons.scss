@@ -1,0 +1,123 @@
+/* =Field
+===================================================== */
+
+/***
+  title: Buttons
+  section: Basic
+  description: Button examples
+  example: |
+    <a class="button">
+      <span class="label">Button name</span>
+    </a>
+***/
+
+.button,
+button {
+
+  /* Box-model */
+  display: inline-block;
+  padding: rem(7) rem(16);
+
+  /* Typography */
+  font-family: $font-brand-primary;
+  @include font-size(16);
+  line-height: em(24,16);
+  font-weight: $regular;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  color: rgba(255,255,255,.8);
+
+  /* Visual */
+  border: 1px solid transparent;
+  background-color: $color-button-regular;
+  border-radius: $border-radius-small;
+
+  /* Misc */
+  @include transition-fast();
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: #fff;
+    background-color: $color-button-regular-hover;
+
+  }
+
+  i {
+
+    position: relative;
+    top: rem(1);
+
+  }
+
+  i:first-child {
+    margin-right: rem(4);
+  }
+
+  i:last-child {
+    margin-left: rem(4);
+  }
+
+  &.is-color-clients {
+    background-color: $color-theme-clients;
+  }
+
+  &.is-color-scientists {
+    background-color: $color-theme-scientists;
+  }
+
+}
+
+.button-primary {
+
+  background-color: $color-button-primary;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    background-color: $color-button-primary-hover;
+
+  }
+
+}
+
+.button-secondary {
+
+  background-color: $color-button-secondary;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    background-color: $color-button-secondary-hover;
+
+  }
+
+}
+
+.button-small {
+
+  @include font-size(14);
+  line-height: em(20,14);
+  padding: rem(5) rem(10);
+
+}
+
+.button-large {
+
+  @include font-size(18);
+  line-height: em(20,18);
+  padding: rem(10) rem(20);
+
+  @include breakpoint(small) {
+
+    // @include font-size(24);
+    // line-height: em(28,24);
+    padding: rem(18) rem(32);
+
+  }
+
+}

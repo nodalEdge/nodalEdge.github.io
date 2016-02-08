@@ -1,0 +1,71 @@
+/* =Forms
+===================================================== */
+
+/* Inputs */
+#{$all-text-inputs} {
+
+  display: block;
+  width: 100%;
+  @include font-size(14);
+  line-height: em(24,14);
+  padding: rem(7) rem(16);
+  margin: 0;
+  color: $color-text-paragraph;
+  background-color: #fff;
+  border: 1px solid $color-input-regular;
+  border-radius: $border-radius-small;
+  @include transition-fast();
+
+  -webkit-appearance: none; // removes styling on iOS devices and other WebKit browsers
+
+  .style-compact & {
+
+    padding: rem(3) rem(8);
+
+  }
+
+}
+
+#{$all-text-inputs-focus},
+#{$all-text-inputs-hover} {
+
+  outline: none;
+  border-color: $color-input-focus;
+
+}
+
+#{$all-text-inputs-active} {
+
+}
+
+/* Textarea */
+textarea {
+
+  resize: vertical;
+  min-height: rem(160);
+  display: block;
+
+}
+
+/* Select */
+select {
+
+  height: rem(40);
+  display: block;
+  width: 100%;
+  @include font-size(14);
+  line-height: em(24,14);
+  color: $color-text-paragraph;
+  background-color: #fff;
+  padding: rem(7) rem(16);
+  border: 1px solid $color-input-regular;
+  border-radius: $border-radius-small;
+
+  cursor: pointer;
+
+  // Removes default styling on different browsers and devices (iOS, Android...)
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
+  // appearance: none; //
+
+}

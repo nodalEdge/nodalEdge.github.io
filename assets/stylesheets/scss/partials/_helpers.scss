@@ -1,0 +1,167 @@
+/* =Helpers
+===================================================== */
+
+/*
+ * Text styles
+ *
+ * Global text styles
+ */
+
+.text-center {
+
+	text-align: center;
+
+}
+
+.text-left {
+
+	text-align: left;
+
+}
+
+.text-right {
+
+	text-align: right;
+
+}
+
+.text-uppercase {
+
+  text-transform: uppercase;
+
+}
+
+/*
+ * Horizontal rule
+ */
+
+hr {
+
+
+	padding: 0;
+	margin: $proportion-medium 0;
+	border: 0;
+	border-top: 1px solid $color-grey-01;
+
+  @include breakpoint(medium) {
+
+    margin-top: $proportion-large;
+    margin-bottom: $proportion-large;
+
+  }
+
+}
+
+/*
+ * Skip links
+ *
+ * Accessible skip links
+ */
+
+.skip-links {
+
+  position: absolute;
+  z-index: $z-index-skip-links;
+  top: 0;
+  left: 0;
+
+  a {
+
+    display: block;
+    padding: rem(4) rem(20);
+    margin: $proportion-small;
+
+    @include font-size(14);
+    font-weight: $regular;
+    color: $color-text-weak;
+    @include visually-hidden;
+
+    background-color: #fff;
+    border-radius: $border-radius-small;
+
+    &:focus {
+      @include visually-visible;
+    }
+
+    strong {
+    	color: $color-text-strong;
+    }
+
+  }
+
+}
+
+
+/*
+ * Inline images
+ *
+ * Images inside a text block
+ */
+
+ img {
+
+  max-width: 100%;
+  display: block;
+
+ }
+
+ figure {
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: $proportion-medium;
+
+ }
+
+.image-container {
+
+  figcaption {
+
+    margin-top: $proportion-small;
+
+  }
+
+  p {
+
+    @include font-size(16);
+    line-height: 1.5;
+    color: $color-text-weak;
+    margin-bottom: 0;
+
+  }
+
+}
+
+.image-center {
+
+  margin: $proportion-large auto;
+
+}
+
+.image-left {
+
+  margin: $proportion-medium 0;
+
+  @include breakpoint(small) {
+
+    float: left;
+    max-width: 40%;
+    margin: $proportion-small $proportion-medium $proportion-medium 0;
+
+  }
+
+}
+
+.image-right {
+
+  margin: $proportion-medium 0;
+
+  @include breakpoint(medium) {
+
+    float: right;
+    max-width: 40%;
+    margin: $proportion-small 0 $proportion-small $proportion-medium;
+
+  }
+
+}

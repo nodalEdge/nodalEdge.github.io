@@ -1,0 +1,372 @@
+/* =Icons
+===================================================== */
+
+/*
+ * Icons
+ *
+ * Icons created from Streamline icon pack using icomoon
+ */
+
+
+@font-face {
+    font-family: 'streamline';
+    src:    url('#{$icomoon-font-path}/streamline.eot?6f3jud');
+    src:    url('#{$icomoon-font-path}/streamline.eot?6f3jud#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/streamline.woff2?6f3jud') format('woff2'),
+        url('#{$icomoon-font-path}/streamline.ttf?6f3jud') format('truetype'),
+        url('#{$icomoon-font-path}/streamline.woff?6f3jud') format('woff'),
+        url('#{$icomoon-font-path}/streamline.svg?6f3jud#streamline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'streamline' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.stream-search {
+    &:before {
+        content: $stream-search;
+    }
+}
+.stream-view-1 {
+    &:before {
+        content: $stream-view-1;
+    }
+}
+.stream-search2 {
+    &:before {
+        content: $stream-search2;
+    }
+}
+.stream-view-12 {
+    &:before {
+        content: $stream-view-12;
+    }
+}
+.stream-account-circle-1 {
+    &:before {
+        content: $stream-account-circle-1;
+    }
+}
+.stream-account-group-1 {
+    &:before {
+        content: $stream-account-group-1;
+    }
+}
+.stream-account-group-2 {
+    &:before {
+        content: $stream-account-group-2;
+    }
+}
+.stream-account-group-5 {
+    &:before {
+        content: $stream-account-group-5;
+    }
+}
+.stream-business-check {
+    &:before {
+        content: $stream-business-check;
+    }
+}
+.stream-business-hierarchy {
+    &:before {
+        content: $stream-business-hierarchy;
+    }
+}
+.stream-business-idea {
+    &:before {
+        content: $stream-business-idea;
+    }
+}
+.stream-business-man-2 {
+    &:before {
+        content: $stream-business-man-2;
+    }
+}
+.stream-group-chat {
+    &:before {
+        content: $stream-group-chat;
+    }
+}
+.stream-account-circle-12 {
+    &:before {
+        content: $stream-account-circle-12;
+    }
+}
+.stream-account-group-12 {
+    &:before {
+        content: $stream-account-group-12;
+    }
+}
+.stream-account-group-22 {
+    &:before {
+        content: $stream-account-group-22;
+    }
+}
+.stream-account-group-52 {
+    &:before {
+        content: $stream-account-group-52;
+    }
+}
+.stream-business-check2 {
+    &:before {
+        content: $stream-business-check2;
+    }
+}
+.stream-business-hierarchy2 {
+    &:before {
+        content: $stream-business-hierarchy2;
+    }
+}
+.stream-business-idea2 {
+    &:before {
+        content: $stream-business-idea2;
+    }
+}
+.stream-business-man-22 {
+    &:before {
+        content: $stream-business-man-22;
+    }
+}
+.stream-group-chat2 {
+    &:before {
+        content: $stream-group-chat2;
+    }
+}
+.stream-navigation-drawer-1 {
+    &:before {
+        content: $stream-navigation-drawer-1;
+    }
+}
+.stream-navigation-drawer-2 {
+    &:before {
+        content: $stream-navigation-drawer-2;
+    }
+}
+.stream-navigation-drawer-12 {
+    &:before {
+        content: $stream-navigation-drawer-12;
+    }
+}
+.stream-navigation-drawer-22 {
+    &:before {
+        content: $stream-navigation-drawer-22;
+    }
+}
+.stream-filter-22 {
+    &:before {
+        content: $stream-filter-22;
+    }
+}
+.stream-filter-2 {
+    &:before {
+        content: $stream-filter-2;
+    }
+}
+.stream-remove-1 {
+    &:before {
+        content: $stream-remove-1;
+    }
+}
+.stream-remove-12 {
+    &:before {
+        content: $stream-remove-12;
+    }
+}
+.stream-network2 {
+    &:before {
+        content: $stream-network2;
+    }
+}
+.stream-network {
+    &:before {
+        content: $stream-network;
+    }
+}
+.stream-business-maze {
+    &:before {
+        content: $stream-business-maze;
+    }
+}
+.stream-circle-line-graph {
+    &:before {
+        content: $stream-circle-line-graph;
+    }
+}
+.stream-circle-people {
+    &:before {
+        content: $stream-circle-people;
+    }
+}
+.stream-circle-speech-bubble {
+    &:before {
+        content: $stream-circle-speech-bubble;
+    }
+}
+.stream-circle-view {
+    &:before {
+        content: $stream-circle-view;
+    }
+}
+.stream-network-people {
+    &:before {
+        content: $stream-network-people;
+    }
+}
+.stream-network-unknown {
+    &:before {
+        content: $stream-network-unknown;
+    }
+}
+.stream-business-maze2 {
+    &:before {
+        content: $stream-business-maze2;
+    }
+}
+.stream-circle-line-graph2 {
+    &:before {
+        content: $stream-circle-line-graph2;
+    }
+}
+.stream-circle-people2 {
+    &:before {
+        content: $stream-circle-people2;
+    }
+}
+.stream-circle-speech-bubble2 {
+    &:before {
+        content: $stream-circle-speech-bubble2;
+    }
+}
+.stream-circle-view2 {
+    &:before {
+        content: $stream-circle-view2;
+    }
+}
+.stream-network-people2 {
+    &:before {
+        content: $stream-network-people2;
+    }
+}
+.stream-network-unknown2 {
+    &:before {
+        content: $stream-network-unknown2;
+    }
+}
+.stream-network-notebook-share {
+    &:before {
+        content: $stream-network-notebook-share;
+    }
+}
+.stream-network-world {
+    &:before {
+        content: $stream-network-world;
+    }
+}
+.stream-network-notebook-share2 {
+    &:before {
+        content: $stream-network-notebook-share2;
+    }
+}
+.stream-network-world2 {
+    &:before {
+        content: $stream-network-world2;
+    }
+}
+.stream-arrow-circle-down-6 {
+    &:before {
+        content: $stream-arrow-circle-down-6;
+    }
+}
+.stream-arrow-circle-left-6 {
+    &:before {
+        content: $stream-arrow-circle-left-6;
+    }
+}
+.stream-arrow-circle-right-6 {
+    &:before {
+        content: $stream-arrow-circle-right-6;
+    }
+}
+.stream-arrow-circle-up-6 {
+    &:before {
+        content: $stream-arrow-circle-up-6;
+    }
+}
+.stream-arrow-down-7 {
+    &:before {
+        content: $stream-arrow-down-7;
+    }
+}
+.stream-arrow-left-7 {
+    &:before {
+        content: $stream-arrow-left-7;
+    }
+}
+.stream-arrow-right-7 {
+    &:before {
+        content: $stream-arrow-right-7;
+    }
+}
+.stream-arrow-up-7 {
+    &:before {
+        content: $stream-arrow-up-7;
+    }
+}
+.stream-arrow-down-12 {
+    &:before {
+        content: $stream-arrow-down-12;
+    }
+}
+.stream-arrow-left-12 {
+    &:before {
+        content: $stream-arrow-left-12;
+    }
+}
+.stream-arrow-right-12 {
+    &:before {
+        content: $stream-arrow-right-12;
+    }
+}
+.stream-arrow-up-12 {
+    &:before {
+        content: $stream-arrow-up-12;
+    }
+}
+.stream-logo-email {
+    &:before {
+        content: $stream-logo-email;
+    }
+}
+.stream-logo-facebook {
+    &:before {
+        content: $stream-logo-facebook;
+    }
+}
+.stream-logo-linkedin {
+    &:before {
+        content: $stream-logo-linkedin;
+    }
+}
+.stream-logo-twitter-bird {
+    &:before {
+        content: $stream-logo-twitter-bird;
+    }
+}
+.stream-logo-youtube-clip {
+    &:before {
+        content: $stream-logo-youtube-clip;
+    }
+}

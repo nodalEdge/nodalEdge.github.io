@@ -1,0 +1,135 @@
+/* =Layout
+===================================================== */
+
+/*
+ * Global
+ */
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+/*
+ * Body
+ *
+ * Body related styles
+ */
+
+body {
+
+  font-family: $font-brand-primary;
+  line-height: 1.5;
+  color: $color-text;
+  background: #fff;
+  background-color: $color-page-background;
+
+}
+
+/*
+ * Container
+ *
+ * Basic container code
+ */
+
+
+.container {
+
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  max-width: $container-max-width();
+  margin: 0 auto;
+  @include container-padding();
+
+  /* Misc */
+  @include clearfix();
+
+}
+
+.section-main,
+.section-header,
+.section-footer {
+
+  max-width: rem(1600);
+  margin: 0 auto;
+
+}
+
+/*
+ * Section Header
+ *
+ * Header section of the site
+ */
+
+.section-header {
+
+  position: relative;
+  z-index: $z-index-header;
+
+  // background-color: $color-brand-primary;
+
+  > .container {
+
+    padding-top: $container-padding-small;
+    padding-bottom: $container-padding-small;
+    max-width: none;
+
+  }
+
+}
+
+/*
+ * Section Main
+ *
+ * Main section of the site
+ */
+
+.section-main {
+
+  background-color: #fff;
+
+  > .container {
+
+    padding: 0;
+    max-width: none;
+
+  }
+
+  padding-top: $header-height-small;
+  margin-top: -($header-height-small);
+
+  @include breakpoint(small) {
+    padding-top: $header-height;
+    margin-top: -($header-height);
+  }
+
+  .block:first-child {
+
+    padding-top: $header-height-small;
+    margin-top: -($header-height-small);
+
+    @include breakpoint(small) {
+      padding-top: $header-height;
+      margin-top: -($header-height);
+    }
+
+  }
+
+}
+
+/*
+ * Section Footer
+ *
+ * Footer section of the site
+ */
+
+.section-footer {
+
+  background-color: mix($color-theme-regular, #fff, 10%);
+  box-shadow: 0 200px 0 0 mix($color-theme-regular, #fff, 10%); // Make background expand to the bottom
+
+}
